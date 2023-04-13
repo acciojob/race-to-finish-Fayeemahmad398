@@ -1,4 +1,4 @@
-window.Promise=[];
+// window.Promise=[];
 let promise1=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 		return resolve("promise1 has been resolved");
@@ -33,7 +33,7 @@ res.then((data)=>{
 document.getElementById("output").innerText=data;
 	
 }).catch((error)=>{
-	document.getElementById("output").innerText=data;
+	document.getElementById("output").innerText=error;
 
 })
 
