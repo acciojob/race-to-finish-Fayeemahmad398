@@ -29,7 +29,15 @@ let promise5=new Promise((resolve,reject)=>{
 
 let res=Promise.any([promise1,promise2,promise3,promise4,promise5]);
 
-document.getElementById("output").innerText=res;
+res.then((data)=>{
+document.getElementById("output").innerText=data;
+	
+}).catch((error)=>{
+	document.getElementById("output").innerText=data;
+
+})
+
+
 
 
 // console.log(res);
