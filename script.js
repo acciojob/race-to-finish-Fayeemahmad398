@@ -5,7 +5,7 @@ let promise1=new Promise((resolve,reject)=>{
 		return resolve("promise1 has been resolved");
 	},2000)
 })
-let promise2=new Promise((resolve,reject)=<{
+let promise2=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 	return resolve(promise2 has been resolved");
 	},1000)
