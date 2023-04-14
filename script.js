@@ -1,6 +1,7 @@
 // window.Promise=[];
 let promise1=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
+		
 		return resolve("promise1 has been resolved");
 	},2000)
 })
@@ -28,7 +29,7 @@ let promise5=new Promise((resolve,reject)=>{
 })
 
 
-let res=Promise.any([promise1,promise2,promise3,promise4,promise5]);
+let res=Promise.race([promise1,promise2,promise3,promise4,promise5]);
 
 res.then((data)=>{
 document.getElementById("output").innerText=data;
