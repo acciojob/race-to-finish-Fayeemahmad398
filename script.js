@@ -27,6 +27,7 @@ let promise5=new Promise((resolve,reject)=>{
 	},5000)
 })
 
+
 let res=Promise.any([promise1,promise2,promise3,promise4,promise5]);
 
 res.then((data)=>{
